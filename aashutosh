@@ -1,0 +1,237 @@
+"""For 
+multiLine
+Comments"""
+
+#for single line comments
+#: \n(new line) \\n(for n)
+
+#import flask
+
+# print("Hello ", end=",")
+# print("hello this is naman's code: ","Correct")
+# print(20+25+56+90)
+
+# variables.....
+"""
+var1="hello"
+var2=5
+var3=35.5
+print(type(var1))
+print(type(var2))
+print(type(var3))
+print(var2+var3)"""
+
+#UserInput....
+"""print("Enter the number: ")
+num = input() #always Take the input in string format
+numi = int(num)
+print("Entered number is",numi*10)"""
+
+#calculator
+"""
+print("Enter num1")
+num1 = input()
+print("Enter num2")
+num2 = input()
+print("Sum of two number: ", int(num1)+int(num2))"""
+
+#String...
+"""myString="Hello my Name is Naman"
+print(len(myString))
+print(myString[0:5:2])  #0(included):5(not included):2(gap)
+print(myString[::-1]) string in reverse"""
+#String Function
+"""1)myString.isalnum()
+    2)myString.endswith("boy")
+    3)myString.count(b)
+    4)myString.capitalize()
+    5)myString.find("is")
+    6)myString.lower()
+    7)myString.upper()
+    8)myString.replace("is","are")"""
+
+    #LISTs(mutable).....
+"""lists = ["Naman","Varun", "Anshuman", "Aashutosh","Vishal"]
+print(lists)
+
+numbers = [5,9,8,6,7,4]
+numbers.sort()
+numbers.reverse()
+print(numbers)"""   #min(numbers) #max(numbers) #append(10)(insert at end )  #insert(1(index), 67(number)) #remove(7) #pop()(from last)
+
+    #Tuples(Immutable)
+"""tp = (1 ,9 ,6)
+print(tp)"""
+
+# Swap Two Number
+"""a = 1
+b = 5
+a ,b = b, a
+print(a , b)
+"""
+
+#Dictionary(key value pair){Value mai be a dictionary}{key may be a number or string}
+"""
+d1 = {} #.copy()(it return the shallo copy) #.update({}) #.keys()
+print(type(d1))
+d2 = {"Name":"NAMAN", "Branch":"Computer Science"}
+d2["Batch"]="B2"
+del d2["Batch"]
+print(d2["Name"])
+print(d2)
+"""
+
+#Sets {It can't holds duplicate values}
+"""s=set() #s.add() #s.union #s.disjoint
+print(type(s))
+"""
+ #if elif Condition........
+"""var1 = 20
+var2 = 66
+
+var3 = int(input())
+if var3>var2:
+    print("Greater")
+else:
+    print("Lesser")
+List1 = [5,7,6,9]
+if 7 in List1:
+    print("Yes 7 is present") """
+    #HOMEwORD:
+"""age = int(input())
+if age>18:
+    print("Yes You can Derive")
+elif age<18:
+    print("No You can't Drive the car")
+else:
+    print("No You Can't Drive")
+"""
+
+#Loop's
+"""
+list1 = ["Naman","Varun","Anshuman","Vishal","Aashutoh"]
+for names in list1:
+    print(names)"""
+    #WhileLoop
+"""i = 0
+while(i<45):
+    print (i)
+    i = i+1"""
+
+#break And Continue
+"""i = 0
+while(True):
+    if i+1<5:
+        i = i+1
+        continue
+    print(i+1, end=" ")
+    if(i==44):
+        break
+    i = i+1"""
+    #HomeWork
+"""while(True):
+    num = int(input("Enter a number"))
+    if num>100:
+        print("Entered number is greater than 100")
+        break
+    else:
+        print("Try again")
+        continue"""
+#Number gusses
+"""total_gusses = 5
+num = 15
+print("You have total 5 choice")
+while(total_gusses<10):
+    num1 = int(input("Enter the input: "))
+    if num1>num
+        print("Decrease your number")
+    elif num1<num:
+        print("Increase your number")
+    else:
+        print("Correct this is the number")
+        break"""
+
+#Operators in Python
+#Arithmetic Operator/ Assignment/ Comparision/ Logical/ Identity/ Membership/ Bitwise
+"""print(0&0)
+print(0&1)
+print(1&0)
+print(1&1)
+print("\n")
+print(0|0)
+print(0|1)
+print(1|0)
+print(1|1)
+"""
+#function
+"""def function1():
+    print("Hello i'm in function")
+function1()
+"""
+"""def function2(a,b):
+    average = (a+b)/2
+    #return average
+    print(average)
+
+function2(5,7)"""
+"""l = 10 #Global Variable
+
+def function(n):
+    #l = 5 #Local variable
+    m = 8
+    global l #now we can change the global variable 
+    l = l+45
+    print(l ,m)
+function("This")"""
+
+#####Recursion#####
+"""
+def factorial(n):
+    fac = 1
+    for i in range(n):
+        fac = fac*(i+1)
+    return fac
+
+n = int(input("Enter a number: "))
+print(factorial(n))"""
+##Using Resursion
+"""def factorial(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+n = int(input("Enter the number: "))
+
+print(factorial(n))"""
+
+#pattern
+""" *****
+    ****
+    ***
+    **
+    * """
+"""print("Enter number of row's")
+one = int(input())
+print("Enter 1 or 0")
+two = bool(input())
+
+if two==True:
+    for i in range(1,one+1):
+        for j in range(1,i+1):
+            print("*",end=" ")
+        print()
+elif two==False:
+    for i in range(one,0,-1):
+        for j in range(1,i+1):
+            print("*",end=" ")
+       # print()"""
+"""
+def function(n):
+    return lambda a: a*n
+
+two = function(2)
+print(two(10))"""
+
+def getdate():
+    import datetime
+    return datetime.datetime.now()
